@@ -22,6 +22,7 @@ from routers import (
     domain_authority,
     page_speed,
     ssl_checker,
+    domain_rating
 )
 
 
@@ -130,7 +131,7 @@ app.include_router(sitemap_checker.router,    prefix=PREFIX, tags=["Sitemap Chec
 app.include_router(domain_authority.router,   prefix=PREFIX, tags=["Domain Authority"])
 app.include_router(page_speed.router,         prefix=PREFIX, tags=["Page Speed"])
 app.include_router(ssl_checker.router,        prefix=PREFIX, tags=["SSL Checker"])
-
+app.include_router(domain_rating.router,        prefix=PREFIX, tags=["DR Checker"])
 
 # ---------------------------------------------------------------------------
 # Health
@@ -155,5 +156,6 @@ async def root():
             "/api/v1/seo/domain-authority",
             "/api/v1/seo/page-speed",
             "/api/v1/seo/ssl-checker",
+            "/api/v1/seo/dr-checker",
         ],
     }
