@@ -159,6 +159,6 @@ async def root():
             "/api/v1/seo/page-speed",
             "/api/v1/seo/ssl-checker",
             "/api/v1/seo/dr-checker",
-            "/api/v1/seo/dr-checker",
+            "/api/v1/seo/domain-age",
         ],
     }
