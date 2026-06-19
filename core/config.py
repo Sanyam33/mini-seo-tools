@@ -10,6 +10,7 @@ class Settings(BaseSettings):
     USER_AGENT: str = (
         "SEOToolsBot/1.0 (+https://yourdomain.com/bot)"
     )
+    WHOIS_API_KEY: str = ""
 
     # HTTP client timeouts (seconds)
     HTTP_CONNECT_TIMEOUT: float = 10.0
